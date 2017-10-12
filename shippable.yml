@@ -1,11 +1,11 @@
 language: java
 
 jdk:
-- openjdk8
-    - openjdk7
+   - openjdk7
    - oraclejdk7
    - openjdk6
    - oraclejdk8
+   - openjdk8
 
 after_success:
    - mvn clean cobertura:cobertura
@@ -15,4 +15,4 @@ notifications:
   email:
       recipients:
          - exampleone@org.com
-         - e.reilly8@nuigalway.ie
+         - exampletwo@org.com
