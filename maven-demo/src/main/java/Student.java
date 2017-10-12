@@ -37,7 +37,7 @@ public class Student {
 		moduleList.add(module);
 	}
 	
-	public ArrayList<Module> getStudents(){
+	public ArrayList<Module> getModules(){
 		return moduleList;
 	}
 	
