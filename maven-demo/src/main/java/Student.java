@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 
 public class Student {
 
@@ -10,6 +11,7 @@ public class Student {
 	private String studentId;
 	private int age;
 	private static int ID = 0;
+	private ArrayList<Module> moduleList = new ArrayList<Module>();
 
 	Student(String studentName, String dob) {
 
@@ -30,7 +32,15 @@ public class Student {
 
 		return (int) ChronoUnit.YEARS.between(birthday, now);
 	}
-
+	
+	public void addModule(Module module) {
+		moduleList.add(module);
+	}
+	
+	public ArrayList<Module> getStudents(){
+		return moduleList;
+	}
+	
 	String getUserName() {
 		return userName;
 	}
