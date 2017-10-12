@@ -32,7 +32,7 @@ public class Student {
 
 		return (int) ChronoUnit.YEARS.between(birthday, now);
 	}
-	
+
 	public void addModule(Module module) {
 		moduleList.add(module);
 	}

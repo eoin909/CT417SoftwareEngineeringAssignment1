@@ -35,7 +35,17 @@ public class CourseProgrammer {
 	public ArrayList<Module> getModules(){
 		return moduleList;
 	}
+	
+	private ArrayList<Student> studentsList = new ArrayList<Student>();
 
+	public void addStudent(Student student) {
+		studentsList.add(student);
+	}
+	
+	public ArrayList<Student> getStudents(){
+		return studentsList;
+	}
+	
 	public String getCourseName() {
 		return courseName;
 	}
