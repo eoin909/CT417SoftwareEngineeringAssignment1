@@ -1,7 +1,7 @@
 --- 
 after_success: "-mvn clean install"
 email: ~
-jdk: "-openjdk8"
+jdk: "-openjdk9"
 language: java
 notifications: ~
 recipients: "-e.reilly8@nuigalway.ie"
