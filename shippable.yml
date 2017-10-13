@@ -1,6 +1,6 @@
 language: java
 jdk:
- -jdk1.8.10
+ -openjdk8
 after_success:
  -mvn clean install
 notifications:
