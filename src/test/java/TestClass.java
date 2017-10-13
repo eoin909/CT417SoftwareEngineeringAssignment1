@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 import org.junit.Test;
 
 public class TestClass {
@@ -14,10 +12,10 @@ public class TestClass {
 		Module CT436 = new Module("Advanced Professional Skills", "CT436");
 		Module CT421 = new Module("Artificial Intelligence", "CT421");
 
-		CourseProgrammer course = new CourseProgrammer("BCT", "01-09-2014", "05-05-2018");
+		CourseProgrammer BCT = new CourseProgrammer("BCT", "01-09-2014", "05-05-2018");
 		
-		course.addStudent(emer);
-		course.addStudent(jason);
+		BCT.addStudent(emer);
+		BCT.addStudent(jason);
 		
 		emer.addModule(CT417);
 		jason.addModule(CT417);
@@ -28,20 +26,6 @@ public class TestClass {
 		emer.addModule(CT436);
 		jason.addModule(CT421);
 		
-		
-		ArrayList<Student> students = course.getStudents();
-
-		for (int i = 0; i < students.size(); i++) {
-			ArrayList<Module> modules = students.get(i).getModules();
-			System.out.println();
-			System.out.println("Student Name :" + students.get(i).getName());
-			System.out.println("Course Name :" +course.getCourseName());
-			for(int j =0; j<modules.size(); j++) {
-				System.out.println("Module Name :" +modules.get(j).getModuleName());
-			}
-		}
-		
-		
-
+		System.out.println(BCT);
 	}
 }
