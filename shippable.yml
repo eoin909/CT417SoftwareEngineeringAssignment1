@@ -4,5 +4,5 @@ JDK:
 after_success:
 -mvn clean install
 notifications:
-email:
--e.reilly8@nuigalway.ie
+  email:
+  -e.reilly8@nuigalway.ie
