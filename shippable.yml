@@ -1,8 +1,9 @@
-language: java 
-JDK:
--1.8.1 
-after_success:
--mvn clean install
-notifications:
-email:
--e.reilly8@nuigalway.ie
+language: java
+jdk:
+ -jdk1.8.10
+ after_success:
+ -mvn clean install
+ notifications:
+ 	email:
+ 		recipients:
+ 		-e.reilly8@nuigalway.ie
