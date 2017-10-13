@@ -1,8 +1,9 @@
---- 
-after_success: "-mvn clean install"
-email: ~
-jdk:
-  - oraclejdk8
 language: java
-notifications: ~
-recipients: "-e.reilly8@nuigalway.ie"
+jdk:
+ -jdk1.8.10
+after_success:
+ -mvn clean install
+notifications:
+email:
+recipients:
+ -e.reilly8@nuigalway.ie
